@@ -27,7 +27,7 @@ input:focus
 /* End form reset*/
 form {
   width: 90%;
-  margin: 0 auto;
+  margin: 3% auto;
   label {
     width: 100%;
     font-weight: bold;
@@ -49,4 +49,18 @@ form {
     color: #fff;
     @include button($dark-salmon);
   }
+	@media screen and (min-width: $medium-breakpoint) {
+		width: 60%;
+		label {
+			width: 20%;
+			padding-right: $m-margin;
+			text-align: right;
+		}
+		input {
+			width: 80%;
+		}
+		button {
+			width: 40%;
+		}
+	}
 }
