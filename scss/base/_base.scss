@@ -2,11 +2,15 @@
 
 *:not(body):not(html) {
   box-sizing: border-box;
+<<<<<<< HEAD
   //border: 1px solid grey;
+=======
+  // border: 1px solid grey;
+>>>>>>> master
 }
 
 .hero {
-  height: 400px;
+  height: 600px;
   background-color: #666;
 }
 

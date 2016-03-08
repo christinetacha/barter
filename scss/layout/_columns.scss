@@ -7,9 +7,11 @@
 }
 
 .circle {
+  img {
+    width: 100%;
+  }
   @include circle(100px);
   margin: 0 auto;
-  background-color: mistyrose;
 }
 
 @media screen and (min-width: $medium-breakpoint) {
