@@ -12,7 +12,9 @@
     }
   }
   li {
-    margin: 0 $m-margin;
+    // margin: 0 $m-margin;
+    padding: 7px;
+
   }
   li:not(.menu-toggle) {
     display: none;
@@ -29,4 +31,20 @@
 }
 
 .cta {
+  @media screen and (min-width: $large-breakpoint) {
+    h2 {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+    }
+    button {
+      position: absolute;
+      top: 40%;
+      right: -10%;
+      width: 400px;
+    }
+  }
+  h2 {
+    margin: $m-margin 0;
+  }
 }

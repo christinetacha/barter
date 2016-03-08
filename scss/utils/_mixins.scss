@@ -14,3 +14,9 @@
 @mixin centeritem {
   margin: 0 auto;
 }
+
+@mixin circle($width) {
+  width: $width;
+  height: $width;
+  border-radius: 50%;
+}
