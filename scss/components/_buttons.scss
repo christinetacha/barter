@@ -1,5 +1,9 @@
 .btn-cta {
   @include button(pink);
-  width: 60%;
+  height: 200px;
   margin: $s-margin 20%;
+}
+
+.btn-signup {
+  @include button($dark-salmon);
 }

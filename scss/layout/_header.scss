@@ -48,3 +48,17 @@
     margin: $m-margin 0;
   }
 }
+/* Hero */
+.hero-signup {
+  background-image: url("../img/abstract-triangles.jpg");
+  background-size: cover;
+  height: 400px;
+  h1, .nav {
+    color: #fff;
+  }
+  h2 {
+    margin: 150px 0;
+    color: #fff;
+    font-size: 2em;
+  }
+}
