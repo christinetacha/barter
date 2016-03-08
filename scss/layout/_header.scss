@@ -34,8 +34,8 @@
   @media screen and (min-width: $large-breakpoint) {
     h2 {
       position: absolute;
-      top: 10%;
-      left: 10%;
+      top: 18%;
+      left: 7%;
     }
     button {
       position: absolute;
@@ -49,9 +49,6 @@
   }
   h2 {
     margin: $m-margin 0;
-    position: absolute;
-    top: 18%;
-    left: 7%;
   }
 }
 
@@ -68,6 +65,7 @@
     color: #fff;
     font-size: 2em;
   }
+}
 .hero {
   background-image: url("../img/header02.jpg");
   background-size: cover;
