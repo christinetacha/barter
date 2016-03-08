@@ -1,5 +1,8 @@
 .btn-cta {
-  @include button(pink);
-  width: 60%;
-  margin: $s-margin 20%;
+  @include button($hero-red);
+  // width: 60%;
+}
+
+.container {
+  text-align: center;
 }

@@ -39,12 +39,31 @@
     }
     button {
       position: absolute;
-      top: 40%;
-      right: -10%;
-      width: 400px;
+      top: 68%;
+      right: 10%;
+      width: 150px;
+      background-color: $hero-red;
+      color: $dark-grey;
+      font-weight: bold;
     }
   }
   h2 {
     margin: $m-margin 0;
+    position: absolute;
+    top: 18%;
+    left: 7%;
   }
+}
+
+.hero {
+  background-image: url("../img/header02.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.opacity h2 {
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  opacity: .75;
 }
