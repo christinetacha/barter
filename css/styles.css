@@ -95,8 +95,15 @@ footer {
   padding: 20px; }
 
 /* Nav */
+.hero {
+  height: 300px; }
+  @media screen and (min-width: 970px) {
+    .hero {
+      height: 600px; } }
+
 .nav {
-  overflow: auto; }
+  overflow: auto;
+  padding: 10px; }
   .nav .brand {
     float: left; }
   .nav ul {
@@ -120,8 +127,8 @@ footer {
 @media screen and (min-width: 970px) {
   .cta h2 {
     position: absolute;
-    top: 10%;
-    left: 10%; }
+    top: 18%;
+    left: 7%; }
   .cta button {
     position: absolute;
     top: 68%;
@@ -131,10 +138,7 @@ footer {
     color: #2F2F2F;
     font-weight: bold; } }
 .cta h2 {
-  margin: 10px 0;
-  position: absolute;
-  top: 18%;
-  left: 7%; }
+  margin: 10px 0; }
 
 .hero {
   background-image: url("../img/header02.jpg");
