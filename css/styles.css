@@ -32,7 +32,7 @@ li {
   list-style: none; }
 
 .btn-cta {
-  margin: 5px 20%;
+  margin: 5px 0;
   font-size: 1.2em;
   border-radius: 25px;
   padding: 10px;
@@ -151,8 +151,15 @@ footer {
   padding: 20px; }
 
 /* Nav */
+.hero {
+  height: 300px; }
+  @media screen and (min-width: 970px) {
+    .hero {
+      height: 600px; } }
+
 .nav {
-  overflow: auto; }
+  overflow: auto;
+  padding: 10px; }
   .nav .brand {
     float: left; }
   .nav ul {
