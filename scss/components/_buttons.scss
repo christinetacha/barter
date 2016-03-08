@@ -1,8 +1,13 @@
 .btn-cta {
+  margin: $s-margin 0;
   @include button($hero-red);
   // width: 60%;
 }
 
 .container {
   text-align: center;
+}
+
+.btn-signup {
+  @include button($dark-salmon);
 }

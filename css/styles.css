@@ -32,6 +32,7 @@ li {
   list-style: none; }
 
 .btn-cta {
+  margin: 5px 0;
   font-size: 1.2em;
   border-radius: 25px;
   padding: 10px;
@@ -40,6 +41,13 @@ li {
 
 .container {
   text-align: center; }
+
+.btn-signup {
+  font-size: 1.2em;
+  border-radius: 25px;
+  padding: 10px;
+  border-style: none;
+  background-color: #FF0D2F; }
 
 footer {
   font-size: 12px; }
@@ -52,6 +60,54 @@ footer {
 
 .cta h2 {
   color: #2F2F2F; }
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: sans-serif; }
+
+/* Remove the outer glow in Webkit */
+input:focus {
+  outline: 0; }
+
+/* End form reset*/
+form {
+  width: 90%;
+  margin: 0 auto; }
+  form label {
+    width: 100%;
+    font-weight: bold;
+    font-size: .75em;
+    text-transform: capitalize;
+    margin: 10px 0; }
+  form input {
+    width: 100%;
+    float: right;
+    margin-bottom: 10px;
+    border: 2px solid lightgrey; }
+  form button {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 25px;
+    padding: 10px;
+    border-style: none;
+    background-color: #FF0D2F; }
 
 .info-section::after {
   content: "";
@@ -139,6 +195,18 @@ footer {
     font-weight: bold; } }
 .cta h2 {
   margin: 10px 0; }
+
+/* Hero */
+.hero-signup {
+  background-image: url("../img/abstract-triangles.jpg");
+  background-size: cover;
+  height: 400px; }
+  .hero-signup h1, .hero-signup .nav {
+    color: #fff; }
+  .hero-signup h2 {
+    margin: 150px 0;
+    color: #fff;
+    font-size: 2em; }
 
 .hero {
   background-image: url("../img/header02.jpg");
