@@ -50,17 +50,22 @@ form {
     @include button($dark-salmon);
   }
 	@media screen and (min-width: $medium-breakpoint) {
-		width: 60%;
+		width: 40%;
 		label {
-			width: 20%;
+			width: 100%;
 			padding-right: $m-margin;
-			text-align: right;
+			text-align: center;
+			font-size: 16px;
 		}
 		input {
-			width: 80%;
+			width: 100%;
+			margin: 0 auto;
+			height: 30px;
+			border-radius: 5px;
 		}
 		button {
 			width: 40%;
+			margin-top: 60px;
 		}
 	}
 }
