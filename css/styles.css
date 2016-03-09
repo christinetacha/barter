@@ -447,8 +447,9 @@ footer {
       text-align: left; } }
 
 .post-form {
-  border: 5px solid #333;
-  padding: 20px; }
+  border: 1px solid lightgrey;
+  padding: 10px 20px;
+  width: 100%; }
   .post-form label {
     display: block;
     width: 100%;
@@ -457,14 +458,14 @@ footer {
     display: block;
     width: 100%;
     height: 150px;
-    margin: 10px 0;
     vertical-align: top;
     word-wrap: break-word;
     border: 2px solid lightgrey; }
+  .post-form button {
+    margin: 20px auto 0 auto; }
   @media screen and (min-width: 620px) {
     .post-form {
-      border: 10px solid #333;
-      padding: 20px; }
+      width: 70%; }
       .post-form textarea {
         display: block;
         width: 100%;
@@ -474,8 +475,20 @@ footer {
         word-wrap: break-word;
         border: 2px solid lightgrey; } }
 
-.user-posts li {
-  border: 3px solid #2F2F2F;
-  padding: 10px; }
+.user-posts {
+  width: 100%; }
+  .user-posts li {
+    border: 3px solid #2F2F2F;
+    border-radius: 5px;
+    margin: 10px 0; }
+    .user-posts li .post-useremail {
+      background-color: #2F2F2F;
+      color: #fff;
+      padding: 5px 0; }
+    .user-posts li .post-content {
+      padding: 15px; }
+  @media screen and (min-width: 620px) {
+    .user-posts {
+      width: 70%; } }
 
 /*# sourceMappingURL=styles.css.map */
