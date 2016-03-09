@@ -47,7 +47,7 @@
     }
     button {
       position: absolute;
-      top: 68%;
+      top: 68%; //need to change this button's location to be fixed so that it behaves consistently with regards to the header//*
       right: 10%;
       width: 150px;
       background-color: $hero-red;
@@ -83,6 +83,7 @@
     margin: $s-margin auto;
     padding: 5px;
     border-radius: 25px;
+    text-align: center;
   }
   @media screen and (min-width: $medium-breakpoint) {
     height: 300px;

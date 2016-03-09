@@ -418,7 +418,8 @@ footer {
     max-width: 90%;
     margin: 5px auto;
     padding: 5px;
-    border-radius: 25px; }
+    border-radius: 25px;
+    text-align: center; }
   @media screen and (min-width: 620px) {
     .hero-min {
       height: 300px; }
