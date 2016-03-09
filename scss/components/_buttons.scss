@@ -18,4 +18,6 @@
 
 .btn-message {
   @include button ($dark-salmon);
+  display: block;
+  width: 100px;
 }

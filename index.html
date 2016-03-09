@@ -3,9 +3,12 @@
   <head>
     <meta name="viewport" content="width=device-width">
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Barter</title>
   </head>
   <body>
+    <div class="modal-transparency"> </div>
     <div class="container-full">
       <div class="hero">
         <div class="nav">
@@ -18,40 +21,60 @@
           </ul>
         </div>
       </div>
-      <div class="container cta">
-        <div class="opacity">
-          <h2>A bartering network for creative services</h2>
-        </div>
-        <button class="btn-cta">Get Started</button>
+    </div>
+    <div class="container cta">
+      <div class="opacity">
+        <h2>A bartering network for creative services</h2>
       </div>
-      <div class="container">
-        <div class="info-section">
-          <div class="info-item">
-            <div class="circle">
-              <img src="img/clipboard.png" alt="" />
-            </div>
-            <p>Sign up: Tell us what you're looking for, and what you can provide.</p>
+      <button class="btn-cta">Get Started</button>
+    </div>
+    <div class="container">
+      <div class="info-section">
+        <div class="info-item">
+          <div class="circle">
+            <img src="img/clipboard.png" alt="" />
           </div>
-          <div class="info-item">
-            <div class="circle">
-              <img src="img/globe.png" alt="" />
-            </div>
-            <p>Get Matched: We'll show you possible matches in your area.</p>
-          </div>
-          <div class="info-item">
-            <div class="circle">
-              <img src="img/envelopes.png" alt="" />
-            </div>
-            <p>Message: Send a message to the provider and begin bartering!</p>
-          </div>
+          <p>Sign up: Tell us what you're looking for, and what you can provide.</p>
         </div>
-        <div class="preview-section">
-          <div class="preview-item">
-            <p>Preview stuff/other info goes here</p>
+        <div class="info-item">
+          <div class="circle">
+            <img src="img/globe.png" alt="" />
           </div>
+          <p>Get Matched: We'll show you possible matches in your area.</p>
+        </div>
+        <div class="info-item">
+          <div class="circle">
+            <img src="img/envelopes.png" alt="" />
+          </div>
+          <p>Message: Send a message to the provider and begin bartering!</p>
         </div>
       </div>
-      <footer>&copy; 2016 Jess Guilford, Christine Tacha, Andy Cho, Timothy Durward, Simon Temple, Alex Larson<br> All rights reserved</footer>
+      <div class="preview-section">
+        <div class="preview-item">
+          <p>Posts and map api go here</p>
+          <div class="post-item">
+            This is an example post. It exists to show the modal functionality. Please click message.
+            <button class="btn-message">Message</button>
+          </div>
+        </div>
+        <div class="message-modal">
+          <div class="modal-close">x</div>
+          <h3>Email: </h3>
+          <form action='/email/@Model["user"].GetId()' method="post">
+            <label for="email">Email:</label>
+            <input type="text" name="email">
+            <select name = "sender">
+            @foreach(var user in @Model["users"])
+            {
+            <option value = @user.GetId()>@user.GetEmail()</option>
+            }
+          </select>
+            <button type="submit" name="button">Send Email</button>
+          </form>
+        </div>
+      </div>
+      <footer>&copy; 2016 Jess Guilford, Christine Tacha, Andy Cho, Timothy Durward, Simon Temple, Alex Larson<br> All rights reserved
+      </footer>
     </div>
   </body>
 </html>
