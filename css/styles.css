@@ -308,7 +308,7 @@ form {
   clear: both; }
 
 .info-item {
-  padding: 20px; }
+  padding: 50px; }
 
 .circle {
   width: 100px;
@@ -341,7 +341,7 @@ form {
 footer {
   width: 100%;
   text-align: center;
-  padding: 20px; }
+  padding: 50px; }
 
 /* Nav */
 .hero {
