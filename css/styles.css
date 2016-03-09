@@ -17,7 +17,8 @@
 /* End Wireframing */
 /* Base Elements */
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  margin: 0; }
 
 h1, h2, h4, h5, h6 {
   margin: 0;
@@ -264,7 +265,7 @@ textarea {
   font-family: sans-serif; }
 
 /* Remove the outer glow in Webkit */
-input:focus {
+input:focus, textarea:focus {
   outline: 0; }
 
 /* End form reset*/
@@ -398,16 +399,35 @@ footer {
   margin: 10px 0; }
 
 /* Hero */
-.hero-signup {
+.hero-min {
   background-image: url("../img/abstract-triangles.jpg");
   background-size: cover;
-  height: 400px; }
-  .hero-signup h1, .hero-signup .nav {
+  height: 200px;
+  margin-bottom: 10px; }
+  .hero-min h1, .hero-min .nav {
     color: #fff; }
-  .hero-signup h2 {
-    margin: 150px 0;
+  .hero-min h2 {
+    line-height: 50px;
+    margin: 25px 0 0 0;
     color: #fff;
-    font-size: 2em; }
+    font-size: 1.6em; }
+  .hero-min h3 {
+    color: #2F2F2F;
+    background-color: #fff;
+    font-size: .8em;
+    max-width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 25px; }
+  @media screen and (min-width: 620px) {
+    .hero-min {
+      height: 300px; }
+      .hero-min h2 {
+        margin: 50px 0 0 0;
+        font-size: 2em; }
+      .hero-min h3 {
+        max-width: 40%;
+        font-size: 1.2em; } }
 
 .hero {
   background-image: url("../img/header02.jpg");
@@ -419,5 +439,64 @@ footer {
   padding: 15px;
   border-radius: 20px;
   opacity: .75; }
+
+.profile-pic {
+  width: 300px;
+  margin: 0 auto; }
+  .profile-pic img {
+    width: 100%; }
+
+.about-user {
+  width: 95%;
+  margin: 0 auto; }
+  @media screen and (min-width: 620px) {
+    .about-user {
+      width: 60%;
+      text-align: left; } }
+
+.post-form {
+  border: 1px solid lightgrey;
+  padding: 10px 20px;
+  width: 100%; }
+  .post-form label {
+    display: block;
+    width: 100%;
+    text-align: center; }
+  .post-form textarea {
+    display: block;
+    width: 100%;
+    height: 150px;
+    vertical-align: top;
+    word-wrap: break-word;
+    border: 2px solid lightgrey; }
+  .post-form button {
+    margin: 20px auto 0 auto; }
+  @media screen and (min-width: 620px) {
+    .post-form {
+      width: 70%; }
+      .post-form textarea {
+        display: block;
+        width: 100%;
+        height: 200px;
+        margin: 10px 0;
+        vertical-align: top;
+        word-wrap: break-word;
+        border: 2px solid lightgrey; } }
+
+.user-posts {
+  width: 100%; }
+  .user-posts li {
+    border: 3px solid #2F2F2F;
+    border-radius: 5px;
+    margin: 10px 0; }
+    .user-posts li .post-useremail {
+      background-color: #2F2F2F;
+      color: #fff;
+      padding: 5px 0; }
+    .user-posts li .post-content {
+      padding: 15px; }
+  @media screen and (min-width: 620px) {
+    .user-posts {
+      width: 70%; } }
 
 /*# sourceMappingURL=styles.css.map */
