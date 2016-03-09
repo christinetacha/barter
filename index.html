@@ -49,29 +49,36 @@
           <p>Message: Send a message to the provider and begin bartering!</p>
         </div>
       </div>
-      <div class="preview-section">
-        <div class="preview-item">
-          <p>Posts and map api go here</p>
-          <div class="post-item">
-            This is an example post. It exists to show the modal functionality. Please click message.
-            <button class="btn-message">Message</button>
+      <div class="post-feed">
+        <div class="posts-column">
+          <p>Posts go in this column</p>
+          <div class = "container user-posts">
+            <li>
+              <div class="post-useremail">user@emailprovider.com</div>
+              <div class="post-content">This is a test post showing user post formatting. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <button class="btn-message">Message</button>
+            </li>
           </div>
         </div>
-        <div class="message-modal">
-          <div class="modal-close">x</div>
-          <h3>Email: </h3>
-          <form action='/email/@Model["user"].GetId()' method="post">
-            <label for="email">Email:</label>
-            <input type="text" name="email">
-            <select name = "sender">
-            @foreach(var user in @Model["users"])
-            {
-            <option value = @user.GetId()>@user.GetEmail()</option>
-            }
-          </select>
-            <button type="submit" name="button">Send Email</button>
-          </form>
+        <div class="map-column">
+          Map goes here
         </div>
+      </div>
+      <div class="message-modal">
+        <div class="modal-close">x</div>
+        <h3>Message User</h3>
+        <form action='/email/@Model["user"].GetId()' method="post">
+          <p>Send a message to a user. Just write your response below, select the user from the dropdown, and click "send message"</p>
+          <label for="email">Write Your Message</label>
+          <textarea type="text" name="email"></textarea>
+          <select name = "sender">
+          @foreach(var user in @Model["users"])
+          {
+          <option value = @user.GetId()>@user.GetEmail()</option>
+          }
+        </select>
+          <button type="submit" name="button">Send Message</button>
+        </form>
       </div>
       <footer>&copy; 2016 Jess Guilford, Christine Tacha, Andy Cho, Timothy Durward, Simon Temple, Alex Larson<br> All rights reserved
       </footer>

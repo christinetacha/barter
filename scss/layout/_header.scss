@@ -42,12 +42,12 @@
   @media screen and (min-width: $large-breakpoint) {
     h2 {
       position: absolute;
-      top: 18%;
+      top: 250px;
       left: 7%;
     }
     button {
       position: absolute;
-      top: 450px; //need to change this button's location to be fixed so that it behaves consistently with regards to the header//*
+      top: 450px; //this button's location must be fixed so that it behaves consistently with regards to the header//*
       right: 10%;
       width: 150px;
       background-color: $hero-red;

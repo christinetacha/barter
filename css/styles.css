@@ -10,10 +10,6 @@
   height: 600px;
   background-color: #666; }
 
-.preview-section {
-  height: 300px;
-  background-color: #bbb; }
-
 /* End Wireframing */
 /* Base Elements */
 body {
@@ -327,15 +323,25 @@ form {
   background-color: #fff;
   border: 1px solid grey;
   position: fixed;
-  top: 30%;
+  top: 10%;
   left: 5%;
   right: 5%;
-  z-index: 2; }
+  z-index: 2;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
+  .message-modal form {
+    width: 90%; }
+  .message-modal textarea {
+    height: 200px;
+    border: 2px solid lightgrey;
+    width: 100%;
+    margin: 10px 0; }
   .message-modal button {
     width: 60%;
     margin: 20px auto 0 auto; }
   .message-modal select {
-    border: 1px solid lightgrey;
+    border: 1px solid #2F2F2F;
     width: 100%; }
   .message-modal .modal-close {
     position: absolute;
@@ -355,6 +361,24 @@ form {
   right: 0;
   bottom: 0;
   z-index: 1; }
+
+.user-posts {
+  width: 100%;
+  background-color: #fff; }
+  .user-posts li {
+    border: 3px solid #2F2F2F;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding-bottom: 10px; }
+    .user-posts li .post-useremail {
+      background-color: #2F2F2F;
+      color: #fff;
+      padding: 5px 0; }
+    .user-posts li .post-content {
+      padding: 15px; }
+  @media screen and (min-width: 620px) {
+    .user-posts {
+      width: 70%; } }
 
 .info-section::after {
   content: "";
@@ -376,8 +400,22 @@ form {
   .info-item {
     width: 33.333333%;
     float: left; } }
-.preview-section {
-  padding: 20px; }
+.post-feed {
+  padding: 20px;
+  background-color: lightgrey; }
+  .post-feed .btn-message {
+    margin: 0 auto; }
+  .post-feed::after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 970px) {
+    .post-feed .posts-column {
+      width: 48%;
+      float: left; }
+    .post-feed .map-column {
+      width: 48%;
+      float: right; } }
 
 .container-full {
   width: 100%; }
@@ -430,7 +468,7 @@ footer {
 @media screen and (min-width: 970px) {
   .cta h2 {
     position: absolute;
-    top: 18%;
+    top: 250px;
     left: 7%; }
   .cta button {
     position: absolute;
@@ -528,21 +566,5 @@ footer {
         vertical-align: top;
         word-wrap: break-word;
         border: 2px solid lightgrey; } }
-
-.user-posts {
-  width: 100%; }
-  .user-posts li {
-    border: 3px solid #2F2F2F;
-    border-radius: 5px;
-    margin: 10px 0; }
-    .user-posts li .post-useremail {
-      background-color: #2F2F2F;
-      color: #fff;
-      padding: 5px 0; }
-    .user-posts li .post-content {
-      padding: 15px; }
-  @media screen and (min-width: 620px) {
-    .user-posts {
-      width: 70%; } }
 
 /*# sourceMappingURL=styles.css.map */

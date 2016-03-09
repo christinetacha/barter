@@ -6,5 +6,5 @@ $(document).ready(function() {
   $(".modal-close").click(function(event) {
     $(".message-modal").fadeToggle();
     $(".modal-transparency").fadeToggle();
-  })
+  });
 });
