@@ -1962,7 +1962,15 @@ footer {
   .nav .brand {
     float: left; }
   .nav ul {
-    float: right; }
+    float: right;
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    text-align: center; }
+    @media screen and (min-width: 970px) {
+      .nav ul {
+        top: 15px;
+        float: none; } }
     .nav ul::after {
       content: "";
       display: table;
@@ -1975,9 +1983,13 @@ footer {
       .nav li:not(.menu-toggle) {
         display: block;
         float: left; } }
-  @media screen and (min-width: 970px) {
-    .nav .menu-toggle {
-      display: none; } }
+  .nav .menu-toggle {
+    position: absolute;
+    top: -30px;
+    right: 5px; }
+    @media screen and (min-width: 970px) {
+      .nav .menu-toggle {
+        display: none; } }
 
 @media screen and (min-width: 970px) {
   .cta h2 {
@@ -2025,7 +2037,9 @@ footer {
         font-size: 2em; }
       .hero-min h3 {
         max-width: 40%;
-        font-size: 1.2em; } }
+        font-size: 1.2em; }
+      .hero-min ul {
+        height: 50px; } }
 
 .hero {
   background-image: url("../img/header02.jpg");

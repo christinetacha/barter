@@ -16,6 +16,14 @@
   }
   ul {
     float: right;
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    text-align: center;
+    @media screen and (min-width: $large-breakpoint) {
+      top: 15px;
+      float: none;
+    }
     &::after {
       @include clearfix;
     }
@@ -26,12 +34,16 @@
   }
   li:not(.menu-toggle) {
     display: none;
+    // background-color: $dark-grey;
     @media screen and (min-width: $large-breakpoint) {
       display: block;
       float: left;
     }
   }
   .menu-toggle {
+    position: absolute;
+    top: -30px;
+    right: 5px;
     @media screen and (min-width: $large-breakpoint) {
       display: none;
     }
@@ -94,6 +106,9 @@
     h3 {
       max-width: 40%;
       font-size: 1.2em;
+    }
+    ul {
+      height: 50px;
     }
   }
 }
