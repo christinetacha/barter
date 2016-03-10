@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width">
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Barter</title>
@@ -14,7 +15,7 @@
         <div class="nav">
           <h1 class="brand">Barter</h1>
           <ul>
-            <li class="menu-toggle">=</li>
+            <li class="menu-toggle"><i class="fa fa-bars"></i></li>
             <li>Sign in</li>
             <li>Sign up</li>
             <li>About</li>
@@ -65,19 +66,19 @@
         </div>
       </div>
       <div class="message-modal">
-        <div class="modal-close">x</div>
+        <div class="modal-close"><i class="fa fa-times"></i></div>
         <h3>Message User</h3>
-        <form action='/email/@Model["user"].GetId()' method="post">
+        <form class="modal-form" action='/email/@Model["user"].GetId()' method="post">
           <p>Send a message to a user. Just write your response below, select the user from the dropdown, and click "send message"</p>
-          <label for="email">Write Your Message</label>
+          <label class="msg" for="email">Write Your Message</label>
           <textarea type="text" name="email"></textarea>
           <select name = "sender">
           @foreach(var user in @Model["users"])
           {
           <option value = @user.GetId()>@user.GetEmail()</option>
           }
-        </select>
-          <button type="submit" name="button">Send Message</button>
+          </select>
+          <button class="modal-btn" type="submit" name="button">Send Message</button>
         </form>
       </div>
       <footer>&copy; 2016 Jess Guilford, Christine Tacha, Andy Cho, Timothy Durward, Simon Temple, Alex Larson<br> All rights reserved
