@@ -8,3 +8,10 @@ $(document).ready(function() {
     $(".modal-transparency").fadeToggle();
   });
 });
+
+$(document).ready(function() {
+  $('.menu-toggle').click(function(event) {
+    $(this).siblings().slideToggle();
+  });
+
+});
