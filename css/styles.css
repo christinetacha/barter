@@ -2040,7 +2040,6 @@ footer {
       height: 600px; } }
 
 .nav {
-  overflow: auto;
   padding: 10px; }
   .nav .brand {
     float: left; }
@@ -2136,10 +2135,14 @@ footer {
   opacity: .75; }
 
 .profile-pic {
-  width: 300px;
+  width: 150px;
   margin: 0 auto; }
   .profile-pic img {
-    width: 100%; }
+    width: 100%;
+    border-radius: 50%; }
+  @media screen and (min-width: 970px) {
+    .profile-pic {
+      width: 300px; } }
 
 .about-user {
   width: 95%;
